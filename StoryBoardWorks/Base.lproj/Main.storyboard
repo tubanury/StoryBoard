@@ -12,29 +12,47 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="storyBoardWorks" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="StoryBoardWorks" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back" translatesAutoresizingMaskIntoConstraints="NO" id="fHV-4O-Da2">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back" translatesAutoresizingMaskIntoConstraints="NO" id="fHV-4O-Da2">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="RF8-vf-PiO">
-                                <rect key="frame" x="30" y="742" width="230" height="51"/>
+                                <rect key="frame" x="30" y="695" width="230" height="98"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login with apple" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V2c-QC-XrK">
-                                        <rect key="frame" x="0.0" y="0.0" width="230" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" systemColor="systemGray2Color"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login with wewalk account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lwj-DB-UJY">
-                                        <rect key="frame" x="0.0" y="30.5" width="230" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" systemColor="systemGray2Color"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nfj-d3-qok" customClass="GenericButton" customModule="StoryBoardWorks" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="230" height="44"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="login">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Login with apple account">
+                                                    <attributes>
+                                                        <color key="NSColor" red="0.98838192654639179" green="0.98838192654639179" blue="0.98838192654639179" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <font key="NSFont" size="12" name="Helvetica"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <color key="baseForegroundColor" red="0.97326030929999996" green="0.97326030929999996" blue="0.97326030929999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4XZ-Sh-hZM" customClass="GenericButton" customModule="StoryBoardWorks" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="54" width="230" height="44"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="login">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Login with wewalk account">
+                                                    <attributes>
+                                                        <color key="NSColor" red="0.99764416881443296" green="0.99764416881443296" blue="0.99764416881443296" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <font key="NSFont" size="12" name="Helvetica"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <color key="baseForegroundColor" red="0.98838192650000001" green="0.98838192650000001" blue="0.98838192650000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </buttonConfiguration>
+                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="230" id="8QG-x3-cRK"/>
@@ -43,25 +61,30 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="7Rn-fG-bB2">
                                 <rect key="frame" x="30" y="527" width="354" height="100"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="32f-t4-nu1">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="32f-t4-nu1" customClass="GenericTextField" customModule="StoryBoardWorks" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="354" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="Cv1-dB-Eai"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rq5-E5-cBf">
+                                    <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rq5-E5-cBf" customClass="GenericTextField" customModule="StoryBoardWorks" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="60" width="354" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="Qeb-8e-wig"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                                     </textField>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pd9-Tm-Dkh">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pd9-Tm-Dkh" customClass="GenericButton" customModule="StoryBoardWorks" customModuleProvider="target">
                                 <rect key="frame" x="249" y="647" width="135" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="KHJ-zD-XPA"/>
@@ -70,15 +93,20 @@
                                 <buttonConfiguration key="configuration" style="filled" title="Login">
                                     <color key="baseBackgroundColor" red="0.33333334329999997" green="0.4352940917" blue="0.96470588450000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="loginButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cih-d6-Tq7"/>
+                                    <segue destination="dPK-YX-NLn" kind="show" identifier="login" id="SlJ-To-76B"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="fHV-4O-Da2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="0WH-Vg-hle"/>
+                            <constraint firstItem="fHV-4O-Da2" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="0WH-Vg-hle"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7Rn-fG-bB2" secondAttribute="trailing" constant="30" id="0gp-uY-F0y"/>
                             <constraint firstItem="RF8-vf-PiO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="6TR-kh-p7J"/>
                             <constraint firstItem="7Rn-fG-bB2" firstAttribute="centerX" secondItem="fHV-4O-Da2" secondAttribute="centerX" id="EPw-5s-0a4"/>
@@ -86,7 +114,7 @@
                             <constraint firstItem="fHV-4O-Da2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="MHi-Rq-8yb"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fHV-4O-Da2" secondAttribute="trailing" id="Oz4-LH-PDM"/>
                             <constraint firstItem="Pd9-Tm-Dkh" firstAttribute="top" secondItem="7Rn-fG-bB2" secondAttribute="bottom" constant="20" id="RgP-BS-slD"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fHV-4O-Da2" secondAttribute="bottom" id="SU8-KJ-Qab"/>
+                            <constraint firstAttribute="bottom" secondItem="fHV-4O-Da2" secondAttribute="bottom" id="SU8-KJ-Qab"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="RF8-vf-PiO" secondAttribute="bottom" constant="69" id="SUb-ix-3eV"/>
                             <constraint firstItem="Pd9-Tm-Dkh" firstAttribute="trailing" secondItem="7Rn-fG-bB2" secondAttribute="trailing" id="TjD-Pv-Rlm"/>
                             <constraint firstItem="7Rn-fG-bB2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="XG4-db-3ij"/>
@@ -95,11 +123,8 @@
                     </view>
                     <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="mWR-KE-GBS"/>
                     <connections>
-                        <outlet property="appleLogin" destination="V2c-QC-XrK" id="yNZ-Uo-aBV"/>
-                        <outlet property="emailText" destination="32f-t4-nu1" id="vEZ-8e-JNH"/>
-                        <outlet property="loginButton" destination="Pd9-Tm-Dkh" id="hT9-br-meg"/>
-                        <outlet property="passwordText" destination="rq5-E5-cBf" id="Q66-dc-jjp"/>
-                        <outlet property="wewalkLogin" destination="Lwj-DB-UJY" id="U3u-Td-36W"/>
+                        <outlet property="EmailTextField" destination="32f-t4-nu1" id="HHl-6I-M7m"/>
+                        <outlet property="PasswordTextField" destination="rq5-E5-cBf" id="Ir3-Bi-y5x"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -109,28 +134,33 @@
         <!--Map View Controller-->
         <scene sceneID="5mh-lk-POf">
             <objects>
-                <viewController storyboardIdentifier="MapViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="dPK-YX-NLn" customClass="MapViewController" customModule="storyBoardWorks" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MapViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="dPK-YX-NLn" customClass="MapViewController" customModule="StoryBoardWorks" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QOn-ts-Vyi">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Fbo-dv-8Pf">
-                                <rect key="frame" x="35" y="59" width="344" height="788"/>
+                                <rect key="frame" x="35" y="103" width="344" height="744"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="Kp1-mB-gv2">
                                         <rect key="frame" x="0.0" y="0.0" width="344" height="55"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0tD-py-kIR">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0tD-py-kIR" customClass="GenericButton" customModule="StoryBoardWorks" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="55" height="55"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="55" id="eie-Fj-2u3"/>
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="tinted" title="">
+                                                <buttonConfiguration key="configuration" style="tinted" image="star" title="">
                                                     <color key="baseBackgroundColor" red="0.33333334329999997" green="0.4352940917" blue="0.96470588450000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N8t-vZ-J9I">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N8t-vZ-J9I" customClass="GenericButton" customModule="StoryBoardWorks" customModuleProvider="target">
                                                 <rect key="frame" x="214" y="0.0" width="130" height="55"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="130" id="yei-mb-ckn"/>
@@ -139,18 +169,28 @@
                                                 <buttonConfiguration key="configuration" style="filled" title="Button">
                                                     <color key="baseBackgroundColor" red="0.33333334329999997" green="0.4352940917" blue="0.96470588450000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                             </button>
                                         </subviews>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="Kp1-mB-gv2" secondAttribute="height" multiplier="344:55" id="a4q-B8-fa0"/>
                                         </constraints>
                                     </stackView>
-                                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="a2C-UM-LYE">
+                                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="a2C-UM-LYE" customClass="GenericMapView" customModule="StoryBoardWorks" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="75" width="344" height="310"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="310" id="U4S-SC-5T3"/>
                                             <constraint firstAttribute="width" secondItem="a2C-UM-LYE" secondAttribute="height" multiplier="344:310" id="mR5-ea-fl0"/>
                                         </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </mapView>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="tmo-Ow-2E5">
                                         <rect key="frame" x="0.0" y="405" width="344" height="290"/>
@@ -166,7 +206,7 @@
                                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         </collectionViewFlowLayout>
                                         <cells>
-                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MapCollectionViewCell" id="dg2-fY-fg0" customClass="MapCollectionViewCell" customModule="storyBoardWorks" customModuleProvider="target">
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MapCollectionViewCell" id="dg2-fY-fg0" customClass="MapCollectionViewCell" customModule="StoryBoardWorks" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="172" height="128"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="eIa-ll-qZO">
@@ -179,30 +219,17 @@
                                                                 <constraint firstAttribute="height" constant="33" id="eFG-b5-yxU"/>
                                                             </constraints>
                                                         </imageView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bVe-fs-ZRl">
-                                                            <rect key="frame" x="8" y="49" width="82.5" height="25.5"/>
-                                                            <attributedString key="attributedText">
-                                                                <fragment content="Distance">
-                                                                    <attributes>
-                                                                        <color key="NSColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                        <font key="NSFont" size="21" name="ComicSansMS"/>
-                                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                    </attributes>
-                                                                </fragment>
-                                                            </attributedString>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Distance" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bVe-fs-ZRl">
+                                                            <rect key="frame" x="8" y="49" width="77.5" height="31"/>
+                                                            <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="21"/>
+                                                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                             <color key="shadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rio-RL-ohf">
-                                                            <rect key="frame" x="8" y="82.5" width="94.5" height="29.5"/>
-                                                            <attributedString key="attributedText">
-                                                                <fragment content="6,12 KM">
-                                                                    <attributes>
-                                                                        <color key="NSColor" red="0.027806862113402109" green="0.027806862113402109" blue="0.027806862113402109" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                                        <font key="NSFont" size="25" name="ComicSansMS-Bold"/>
-                                                                    </attributes>
-                                                                </fragment>
-                                                            </attributedString>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6,12 KM" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rio-RL-ohf">
+                                                            <rect key="frame" x="8" y="88" width="100" height="35.5"/>
+                                                            <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="25"/>
+                                                            <color key="textColor" red="0.027806862113402109" green="0.027806862113402109" blue="0.027806862113402109" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
@@ -225,12 +252,17 @@
                                             </collectionViewCell>
                                         </cells>
                                     </collectionView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="egJ-g6-GzW">
-                                        <rect key="frame" x="0.0" y="715" width="344" height="73"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="egJ-g6-GzW" customClass="GenericButton" customModule="StoryBoardWorks" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="715" width="344" height="29"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Start" buttonSize="large">
                                             <color key="baseBackgroundColor" red="0.33333334329999997" green="0.4352940917" blue="0.96470588450000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </buttonConfiguration>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -244,12 +276,11 @@
                             <constraint firstItem="Fbo-dv-8Pf" firstAttribute="top" secondItem="YmU-Wm-pDx" secondAttribute="top" constant="15" id="swG-a3-0iN"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="45g-SL-9Qg"/>
                     <connections>
+                        <outlet property="EmailButton" destination="N8t-vZ-J9I" id="PFZ-F1-zMc"/>
+                        <outlet property="FavoritesButton" destination="0tD-py-kIR" id="eSD-nt-gCe"/>
                         <outlet property="collectionView" destination="tmo-Ow-2E5" id="RBd-kl-zyG"/>
-                        <outlet property="emailButton" destination="N8t-vZ-J9I" id="BSZ-kQ-fKe"/>
-                        <outlet property="favButton" destination="0tD-py-kIR" id="J1S-tO-kE3"/>
-                        <outlet property="map" destination="a2C-UM-LYE" id="jvb-nE-pGT"/>
-                        <outlet property="startButton" destination="egJ-g6-GzW" id="TKi-g8-8Bm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r6d-2R-NA6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -273,14 +304,39 @@
             <point key="canvasLocation" x="-999" y="-496"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="0tD-py-kIR">
+            <size key="intrinsicContentSize" width="48" height="38"/>
+        </designable>
+        <designable name="32f-t4-nu1">
+            <size key="intrinsicContentSize" width="62.5" height="34"/>
+        </designable>
+        <designable name="4XZ-Sh-hZM">
+            <size key="intrinsicContentSize" width="196.5" height="44"/>
+        </designable>
+        <designable name="N8t-vZ-J9I">
+            <size key="intrinsicContentSize" width="67" height="31"/>
+        </designable>
+        <designable name="Nfj-d3-qok">
+            <size key="intrinsicContentSize" width="186.5" height="44"/>
+        </designable>
+        <designable name="Pd9-Tm-Dkh">
+            <size key="intrinsicContentSize" width="59.5" height="31"/>
+        </designable>
+        <designable name="egJ-g6-GzW">
+            <size key="intrinsicContentSize" width="72" height="47"/>
+        </designable>
+        <designable name="rq5-E5-cBf">
+            <size key="intrinsicContentSize" width="90.5" height="34"/>
+        </designable>
+    </designables>
     <resources>
         <image name="back" width="1440" height="2960"/>
         <image name="distance" width="50" height="50"/>
+        <image name="login" width="30" height="30"/>
+        <image name="star" width="24" height="24"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGray2Color">
-            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
